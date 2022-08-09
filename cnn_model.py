@@ -73,3 +73,4 @@ if __name__ == "__main__":
 
     model.summary()
 
+    print(model.evaluate(test_images, test_labels))
