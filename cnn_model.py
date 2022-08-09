@@ -9,7 +9,7 @@ from sklearn.utils import shuffle
 # 0 = cat
 # 1 = dog
 
-dir_path = "C:\\Users\\Dario\\Documents\\Dario\\coding\\cat_dog_image_cnn"
+dir_path = os.getcwd()
 
 def get_datasets():
     train_cats = np.array([cv2.resize(cv2.imread(f"{dir_path}\\dataset\\training_set\\cats\\cat.{i}.jpg"), (128, 128)) for i in range(1, 4001)])  # (4000, 128, 128, 3)
